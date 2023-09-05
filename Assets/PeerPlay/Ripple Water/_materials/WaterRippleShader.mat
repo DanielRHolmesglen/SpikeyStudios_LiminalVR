@@ -37,8 +37,8 @@ Material:
     - _Distance7: 0
     - _Distance8: 0
     - _Frequency: 2
-    - _Glossiness: 0.838
-    - _Metallic: 0
+    - _Glossiness: 0.405
+    - _Metallic: 0.391
     - _Scale: 0.18
     - _Speed: 0.3
     - _WaveAmplitude1: 0
@@ -66,4 +66,4 @@ Material:
     - _zImpact7: 0
     - _zImpact8: 0
     m_Colors:
-    - _Color: {r: 0.43867922, g: 1, b: 0.97867763, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.8454566, a: 1}
