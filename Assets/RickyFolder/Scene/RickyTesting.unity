@@ -132,6 +132,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks
       objectReference: {fileID: 0}
+    - target: {fileID: -801444602759408952, guid: 9cd65e1a81302764992b5d57f4de42af,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421051563082912031, guid: 9cd65e1a81302764992b5d57f4de42af,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864103290843034929, guid: 9cd65e1a81302764992b5d57f4de42af,
+        type: 3}
+      propertyPath: m_Name
+      value: Rock3
+      objectReference: {fileID: 0}
     - target: {fileID: -4853414302756323735, guid: 9cd65e1a81302764992b5d57f4de42af,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -145,7 +160,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 9cd65e1a81302764992b5d57f4de42af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.33
+      value: 1.602
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9cd65e1a81302764992b5d57f4de42af,
         type: 3}
@@ -202,11 +217,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -801444602759408952, guid: 9cd65e1a81302764992b5d57f4de42af,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock1
-      objectReference: {fileID: 0}
     - target: {fileID: 1050015404475871976, guid: 9cd65e1a81302764992b5d57f4de42af,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -217,16 +227,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d608d7ba61abe3b429a96dfc707bb4bd, type: 2}
-    - target: {fileID: 4864103290843034929, guid: 9cd65e1a81302764992b5d57f4de42af,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8421051563082912031, guid: 9cd65e1a81302764992b5d57f4de42af,
-        type: 3}
-      propertyPath: m_Name
-      value: Rock2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cd65e1a81302764992b5d57f4de42af, type: 3}
 --- !u!1 &664848084
