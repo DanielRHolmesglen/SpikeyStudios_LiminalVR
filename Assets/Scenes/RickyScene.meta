@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 036305ffa740e294cb8f496b2d136218
+<<<<<<<< Updated upstream:Assets/_App/Shaders/Water/Resources.meta
+guid: c8a408aaf1ccbd84291725fa2233fd85
+========
+guid: b5655c49b9adc7a4f8016f9915c38e99
+>>>>>>>> Stashed changes:Assets/Scenes/RickyScene.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
