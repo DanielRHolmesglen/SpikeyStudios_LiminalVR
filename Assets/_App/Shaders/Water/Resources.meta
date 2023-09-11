@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/RickyFolder.meta
-guid: 37fd4ef5264637a4f926edc619d6dbad
-========
 guid: c8a408aaf1ccbd84291725fa2233fd85
->>>>>>>> main:Assets/_App/Shaders/Water/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
