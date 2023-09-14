@@ -18,24 +18,26 @@ public class RockSkipping : MonoBehaviour
     public GameObject rock;
     public GameObject player;
 
+    public Collider rockCollider;
+
     //speed variables
     public float hMinSpeed; //minimum speed threshold
     public float hSpeed; //current horizontal speed
     public float airDrag; //speed reduction overtime
 
     //vertical speed
-    Vector3 lastPos; //previous position
-    Vector3 curPos; //current position
+    Vector3 lastVPos; //previous position
+    Vector3 curVPos; //current position
     public float vSpeed; //current vertical speed
 
     //water level
-    private float waterLevel;
+    public float waterLevel;
 
     Vector3 rockForward; //rock forward direction
 
     void Start()
     {
-        rock = GetComponent<GameObject>();
+        rock = GetComponentInChildren<GameObject>();
 
     }
 
@@ -43,13 +45,13 @@ public class RockSkipping : MonoBehaviour
     {
         if (hSpeed > hMinSpeed /* && angle between water horizon and rock vector */)   //if speed is greater than threshold, then skip over water
         {
-            Debug.Log("fast");
             //move forward relative to the object's forward
-            transform.position = hSpeed * transform.forward * Time.deltaTime;
+            transform.position += hSpeed * transform.forward * Time.deltaTime;
 
             if (rock.transform.position.y >= waterLevel) //if object reaches waterlevel, do skip
             {
                 RockSkip();
+                Debug.Log("skip");
             }
             hSpeed -= airDrag * Time.deltaTime; //slows down hSpeed by an amount every second
         }
@@ -61,8 +63,8 @@ public class RockSkipping : MonoBehaviour
 
     public void RockSink()
     {
-        //sink rock below water level, apply vfx, and destroy object
         Sink.Invoke();
+
         Invoke("Destroy(this.gameObject)", 2f);
     }
 
