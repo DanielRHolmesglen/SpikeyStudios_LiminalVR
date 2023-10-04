@@ -3,7 +3,22 @@ guid: 54b56c82030705b4f800d16e6c3bca9d
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ConPillars
+    second: {fileID: 2100000, guid: b4412cd86af41497da21d46892e144bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: 4a4e0c4311b5c4d8aae1184e9ef32ef5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top Section
+    second: {fileID: 2100000, guid: 42acf3db7ae3747328d5f4d4a4de073a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
