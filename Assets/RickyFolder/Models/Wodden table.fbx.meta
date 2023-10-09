@@ -3,7 +3,27 @@ guid: d79e6dcab2794674abeecabdec62f284
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: 209ef750414bb46608a5607f6cd887e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalPlate
+    second: {fileID: 2100000, guid: c4c185b7f09884009b4633adcf3eeb32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Weld
+    second: {fileID: 2100000, guid: b0566fcb02e2e4361a362d4c446c3306, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: c0c4c0a7a171449338a916b659c8624f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
