@@ -14,77 +14,45 @@ public class RockSkipping : MonoBehaviour
     public UnityEvent Skip;
     public UnityEvent Sink;
 
+    private bool sink;
     //objects
     public GameObject rock;
     public GameObject player;
 
     public Collider rockCollider;
+    public Rigidbody rb;
 
-    //speed variables
-    [SerializeField] public float hMinSpeed; //minimum speed threshold
-    [SerializeField] public float hSpeed; //current horizontal speed
-    [SerializeField] public float airDrag; //speed reduction overtime
-
-    //vertical speed
-    Vector3 lastVPos; //previous position
-    public float vSpeed; //current vSpeed
-    Vector3 yDelta;
-    Rigidbody rb;
-
-    //water level
-    public float waterLevel;
+    //variables
+    public float xSpeed; 
 
     void Start()
     {
-        rock = GetComponent<GameObject>();
-        rb = GetComponent<Rigidbody>();
+        rock = GetComponentInChildren<GameObject>();
     }
 
     void Update()
     {
-        /* if (hSpeed > hMinSpeed && vSpeed < -10)   //if speed is greater than threshold, then skip over water
-            {
-                //if (transform.position.y <= waterLevel) RockSkip();
-                //hspeed calculations
-                hSpeed -= airDrag * Time.deltaTime; //slows down hSpeed by an amount every second
+        transform.position += (xSpeed * transform.forward * Time.deltaTime);
 
-                transform.position += (hSpeed * transform.forward * Time.deltaTime);
-                transform.position += (vSpeed * transform.up * Time.deltaTime);
+        Invoke("RockSink", 5f);
 
-                //vspeed calculations
-                yDelta = (transform.position - lastVPos);
-                lastVPos = transform.position;
-                vSpeed = (transform.position.y- yDelta.y - 1f) / Time.deltaTime; 
-
-            }
-            else
-            {
-                RockSink();
-            }
-        } */
-
-
-
-        if (rb.velocity.x < hMinSpeed)
+        if (sink == true && transform.position.y <= 0) //waterlevel set to 0
         {
-            RockSink();
+            Sink.Invoke(); //apply splash and ripple vfx
+            Debug.Log("Sink");
+            rock.SetActive(false);
+            Destroy(this);
         }
     }
 
-    public void RockSink()
+    void RockSink()
     {
-        transform.position -= Vector3.up * -2;
-        Sink.Invoke();
-        //apply splash and ripple vfx
-        Invoke("Destroy(this.gameObject)", 2f);
-
+        sink = true;
     }
 
-    public void RockSkip()
+    void OnCollisionEnter(Collider collider)
     {
-        Skip.Invoke();
-        if (vSpeed < 0) vSpeed *= -1;
-        //apply splash and ripple vfx
+        Skip.Invoke(); //apply splash and ripple vfx
         Debug.Log("skip");
     }
 }
