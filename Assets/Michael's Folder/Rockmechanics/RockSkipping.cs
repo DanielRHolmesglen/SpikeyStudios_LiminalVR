@@ -9,66 +9,50 @@ using Valve.VR.InteractionSystem;
 public class RockSkipping : MonoBehaviour
 {
     /// <summary>
-    /// Script attatches to Rock object for physics movement, skipping mechanics, and communicates for vfx
+    /// Script attaches to Rock object for physics movement, skipping mechanics, and communicates for vfx
     /// </summary>
     public UnityEvent Skip;
     public UnityEvent Sink;
 
+    private bool sink;
     //objects
     public GameObject rock;
     public GameObject player;
 
-    //speed variables
-    public float hMinSpeed; //minimum speed threshold
-    public float hSpeed; //current horizontal speed
-    public float airDrag; //speed reduction overtime
+    public Collider rockCollider;
+    public Rigidbody rb;
 
-    //vertical speed
-    Vector3 lastPos; //previous position
-    Vector3 curPos; //current position
-    public float vSpeed; //current vertical speed
-
-    //water level
-    private float waterLevel;
-
-    Vector3 rockForward; //rock forward direction
+    //variables
+    public float xSpeed; 
 
     void Start()
     {
-        rock = GetComponent<GameObject>();
-
+        rock = GetComponentInChildren<GameObject>();
     }
 
     void Update()
     {
-        if (hSpeed > hMinSpeed /* && angle between water horizon and rock vector */)   //if speed is greater than threshold, then skip over water
-        {
-            Debug.Log("fast");
-            //move forward relative to the object's forward
-            transform.position = hSpeed * transform.forward * Time.deltaTime;
+        transform.position += (xSpeed * transform.forward * Time.deltaTime);
 
-            if (rock.transform.position.y >= waterLevel) //if object reaches waterlevel, do skip
-            {
-                RockSkip();
-            }
-            hSpeed -= airDrag * Time.deltaTime; //slows down hSpeed by an amount every second
-        }
-        else
+        Invoke("RockSink", 5f);
+
+        if (sink == true && transform.position.y <= 0) //waterlevel set to 0
         {
-            RockSink();
+            Sink.Invoke(); //apply splash and ripple vfx
+            Debug.Log("Sink");
+            rock.SetActive(false);
+            Destroy(this);
         }
     }
 
-    public void RockSink()
+    void RockSink()
     {
-        //sink rock below water level, apply vfx, and destroy object
-        Sink.Invoke();
-        Invoke("Destroy(this.gameObject)", 2f);
+        sink = true;
     }
 
-    public void RockSkip()
+    void OnCollisionEnter(Collider collider)
     {
-        Skip.Invoke();
-        //apply vfx, skip over water
+        Skip.Invoke(); //apply splash and ripple vfx
+        Debug.Log("skip");
     }
 }
