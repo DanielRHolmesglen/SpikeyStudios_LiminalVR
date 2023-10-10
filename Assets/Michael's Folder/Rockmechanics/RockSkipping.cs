@@ -52,6 +52,10 @@ public class RockSkipping : MonoBehaviour
 
     void OnCollisionEnter(Collider collider)
     {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         Skip.Invoke(); //apply splash and ripple vfx
         Debug.Log("skip");
     }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Michael's Folder/RockStack.meta
 guid: e4d0b2255c018634cb6c89ba597fe526
+========
+guid: c21b7269cb61dc4459d95b49eabaebc0
+>>>>>>>> Stashed changes:Assets/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
