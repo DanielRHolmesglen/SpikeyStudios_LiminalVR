@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_App/Shaders/Water/Resources.meta
 guid: c8a408aaf1ccbd84291725fa2233fd85
+========
+guid: c21b7269cb61dc4459d95b49eabaebc0
+>>>>>>>> Michael's-Branch:Assets/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
