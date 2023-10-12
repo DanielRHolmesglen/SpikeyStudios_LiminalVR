@@ -27,7 +27,7 @@ public class RockSkipping : MonoBehaviour
 
     void Start()
     {
-        rock = GetComponentInChildren<GameObject>();
+        rock = gameObject.gameObject;
     }
 
     void Update()
@@ -46,12 +46,11 @@ public class RockSkipping : MonoBehaviour
     }
 
     void RockSink()
-    {
-        sink = true;
-    }
+    { sink = true; }
 
-    void OnCollisionEnter(Collider collider)
+    void OnCollisionEnter(Collision collision)
     {
+
         Skip.Invoke(); //apply splash and ripple vfx
         Debug.Log("skip");
     }
