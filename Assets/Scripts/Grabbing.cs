@@ -26,8 +26,10 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("attempt to select rock");
         if(InputMonitor.isitheld==InputMonitor.beingHeld.no)
         {
+            Debug.Log("Attempt to put in hand");
             rocksRigid.useGravity = false;
             OnInteraction.Invoke();
             rocksRigid.position = hand.position;
@@ -63,6 +65,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Debug.Log("attempt to drop");
         if(isHeld==true)
         {
             InputMonitor.isitheld = InputMonitor.beingHeld.no;
