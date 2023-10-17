@@ -64,10 +64,10 @@ Material:
     - _WorldspaceTile: 0.11
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.7216981, g: 0.8886792, b: 1, a: 1}
+    - _BottomColor: {r: 0.9009434, g: 0.9609354, b: 1, a: 1}
     - _Color0: {r: 0, g: 0.7264151, b: 0.18160377, a: 1}
     - _PosOffset: {r: 0, g: 0, b: 0, a: 0}
     - _RimColor: {r: 0.9419528, g: 0.75, b: 1, a: 1}
-    - _TopColor: {r: 1, g: 0.740566, b: 0.8174353, a: 1}
+    - _TopColor: {r: 1, g: 0.8160377, b: 0.8689965, a: 1}
     - _WaveDir: {r: 0, g: 0, b: 0, a: 0}
     - _WaveStretch: {r: 0, g: 0, b: 0, a: 0}
