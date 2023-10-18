@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4388162910967351734}
   - component: {fileID: 4388162910967351735}
   - component: {fileID: -8828800501330825524}
+  - component: {fileID: 7724337370273966139}
   m_Layer: 0
   m_Name: Rock5
   m_TagString: Untagged
@@ -148,3 +149,30 @@ MonoBehaviour:
   rippleEffect: {fileID: 5089834392822543356, guid: 1b6550aeb2d1a66489ef28c257b60c04,
     type: 3}
   water: {fileID: 5465636825609084944, guid: 87222d39e60c2bc43ade6170f649ce67, type: 3}
+--- !u!114 &7724337370273966139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5747736604025597295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31becdf954fc12447a6630a6865b8176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skip:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Sink:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  rock: {fileID: 5747736604025597295}
+  player: {fileID: 0}
+  rockCollider: {fileID: 4388162910967351734}
+  rb: {fileID: 4388162910967351728}
+  xSpeed: 0

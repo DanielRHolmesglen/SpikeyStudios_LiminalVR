@@ -32,7 +32,7 @@ public class RockSkipping : MonoBehaviour
 
     void Update()
     {
-        transform.position += (xSpeed * transform.forward * Time.deltaTime);
+        //transform.position += (xSpeed * transform.forward * Time.deltaTime);
 
         Invoke("RockSink", 5f);
 
