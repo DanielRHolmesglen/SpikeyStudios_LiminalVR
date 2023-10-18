@@ -5,6 +5,7 @@ using UnityEngine;
 public class RippleEffect : MonoBehaviour
 {
     public ParticleSystem splashEffect;
+    public ParticleSystem rippleEffect;
     public GameObject water;
 
     private void OnCollisionEnter(Collision collision)
@@ -15,6 +16,11 @@ public class RippleEffect : MonoBehaviour
             splashEffect.transform.position = collision.contacts[0].point;
             splashEffect.transform.position += Vector3.up * 0.1f;
             splashEffect.Play();
+
+            rippleEffect.Stop();
+            rippleEffect.transform.position = collision.contacts[0].point;
+            rippleEffect.transform.position += Vector3.up * 0.1f;
+            rippleEffect.Play();
         }
     }
 }
