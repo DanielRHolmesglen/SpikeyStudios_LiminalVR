@@ -1310,6 +1310,11 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 3162661083199630188, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5535938848331261844, guid: 8d832fca3d5a4b24d92767882f64bfc0,
         type: 3}
       propertyPath: water
@@ -1317,6 +1322,32 @@ PrefabInstance:
       objectReference: {fileID: 780845850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d832fca3d5a4b24d92767882f64bfc0, type: 3}
+--- !u!1 &3162661084050057130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6396776585940818529, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3162661084050057129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3162661084050057131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3162661084050057130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5afdc46e95004949ba4228840fba485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hand: {fileID: 106151024}
+  throwing: 150
+  wait: 0.5
 --- !u!1001 &3870016700166117790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1495,6 +1526,32 @@ PrefabInstance:
       objectReference: {fileID: 780845850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91042fa6f2ccf614880c20185c09f9b7, type: 3}
+--- !u!1 &4388162913001802476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5747736604025597295, guid: 91042fa6f2ccf614880c20185c09f9b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4388162913001802475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4388162913001802477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4388162913001802476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5afdc46e95004949ba4228840fba485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hand: {fileID: 106151024}
+  throwing: 150
+  wait: 0.5
 --- !u!1001 &6626449394279552122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1582,6 +1639,11 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6626449394300517131, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -6750352249411443520, guid: 9208edb7c233bf14684e1050079063ba,
         type: 3}
       propertyPath: water
@@ -1589,6 +1651,32 @@ PrefabInstance:
       objectReference: {fileID: 780845850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9208edb7c233bf14684e1050079063ba, type: 3}
+--- !u!1 &6626449394279552123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2941991350095378165, guid: 9208edb7c233bf14684e1050079063ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 6626449394279552122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6626449394279552124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626449394279552123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5afdc46e95004949ba4228840fba485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hand: {fileID: 106151024}
+  throwing: 150
+  wait: 0.5
 --- !u!1001 &8311763111321428480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1676,6 +1764,11 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 8311763111031676266, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8311763111031676267, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
       propertyPath: m_Material
@@ -1689,6 +1782,32 @@ PrefabInstance:
       objectReference: {fileID: 780845850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a7b6b68099cda4baf0fea5058558ac, type: 3}
+--- !u!1 &8311763111321428481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 33985446058348945, guid: a2a7b6b68099cda4baf0fea5058558ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 8311763111321428480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8311763111321428482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8311763111321428481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5afdc46e95004949ba4228840fba485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hand: {fileID: 106151024}
+  throwing: 150
+  wait: 0.5
 --- !u!1001 &8674591300686685178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1771,6 +1890,11 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 8674591300629195600, guid: 4c47701b8a645844095ade0d4f333168,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2563573176102782501, guid: 4c47701b8a645844095ade0d4f333168,
         type: 3}
       propertyPath: water
@@ -1778,3 +1902,29 @@ PrefabInstance:
       objectReference: {fileID: 780845850}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c47701b8a645844095ade0d4f333168, type: 3}
+--- !u!1 &8674591300686685179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 811698815599392826, guid: 4c47701b8a645844095ade0d4f333168,
+    type: 3}
+  m_PrefabInstance: {fileID: 8674591300686685178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8674591300686685180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674591300686685179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5afdc46e95004949ba4228840fba485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hand: {fileID: 106151024}
+  throwing: 150
+  wait: 0.5
