@@ -5,9 +5,12 @@ using Liminal.Core.Fader;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] rocksToSpawn;
-    public float numberOfRocksToSpawn;
-    public bool isRandomized = true;
+    //After a certain number of rocks are thrown, the game will end 
+
+    //Variables needed 
+    public float maxNumOfRocksThrown = 0;
+    public GameObject water;
+    public GameObject[] rocksToThrow;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +21,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isRandomized == true)
-        {
-            int randomIndex = Random.Range(0, rocksToSpawn.Length);
-            
-            Instantiate(rocksToSpawn[randomIndex], transform.position, Quaternion.identity);
-        }
+        
     } 
 }
