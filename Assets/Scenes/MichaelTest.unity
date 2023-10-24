@@ -412,7 +412,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508655048}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -581,11 +581,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 917552570117603672, guid: 56e2c9c0a9fa9314b8d78fb2af85ab54,
-        type: 3}
-      propertyPath: m_Name
-      value: RockPile
-      objectReference: {fileID: 0}
     - target: {fileID: 917552570117603653, guid: 56e2c9c0a9fa9314b8d78fb2af85ab54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -639,6 +634,16 @@ PrefabInstance:
     - target: {fileID: 917552570117603653, guid: 56e2c9c0a9fa9314b8d78fb2af85ab54,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 917552570117603672, guid: 56e2c9c0a9fa9314b8d78fb2af85ab54,
+        type: 3}
+      propertyPath: m_Name
+      value: RockPile
+      objectReference: {fileID: 0}
+    - target: {fileID: 917552570117603672, guid: 56e2c9c0a9fa9314b8d78fb2af85ab54,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
