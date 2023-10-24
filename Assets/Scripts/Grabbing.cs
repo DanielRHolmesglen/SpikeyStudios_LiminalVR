@@ -7,8 +7,11 @@ using UnityEngine.EventSystems;
 public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public UnityEvent OnInteraction;
+    public UnityEvent OnThrow;
 
-    public Transform hand;
+    private Transform hand;
+    public Transform handLeft;
+    public Transform handRight;
     private bool isHeld=false;
     private Rigidbody rocksRigid;
     public float throwing;
@@ -24,11 +27,29 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        rocksRigid.useGravity = false;
-        OnInteraction.Invoke();
-        rocksRigid.position =hand.position;
-        rocksRigid.rotation = hand.rotation;
-        isHeld = true;
+        Debug.Log("attempt to select rock");
+        if(InputMonitor.isitheld==InputMonitor.beingHeld.no)
+        {
+            Debug.Log("Attempt to put in hand");
+            rocksRigid.useGravity = false;
+            OnInteraction.Invoke();
+            rocksRigid.position = hand.position;
+            rocksRigid.rotation = hand.rotation;
+            isHeld = true;
+            InputMonitor.isitheld = InputMonitor.beingHeld.yes;
+        }
+    }
+
+    public void Update()
+    {
+        if(InputMonitor.currenthand==InputMonitor.handPr.right)
+        {
+            hand = handRight;
+        }
+        else if(InputMonitor.currenthand == InputMonitor.handPr.left)
+        {
+            hand = handLeft;
+        }
     }
 
     public void FixedUpdate()
@@ -45,11 +66,17 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Debug.Log("attempt to drop");
+        if(isHeld==true)
+        {
+            InputMonitor.isitheld = InputMonitor.beingHeld.no;
+        }
         isHeld = false;
         Debug.Log(direction);
         Debug.Log(speed);
         rocksRigid.useGravity = true;
         rocksRigid.AddForce(direction * (throwing*speed),ForceMode.Impulse);
+        OnThrow.Invoke();
     }
 
     IEnumerator Movments()
