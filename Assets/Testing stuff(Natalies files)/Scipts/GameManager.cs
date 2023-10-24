@@ -24,10 +24,5 @@ public class GameManager : MonoBehaviour
             
             Instantiate(rocksToSpawn[randomIndex], transform.position, Quaternion.identity);
         }
-    }
-
-    void SpawnRocks()
-    {
-        
-    }
+    } 
 }
