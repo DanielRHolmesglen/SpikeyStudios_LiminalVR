@@ -15,15 +15,13 @@ public class RockSkipping : MonoBehaviour
     public UnityEvent Sink;
 
     private bool sink;
+    public float skipDuration;
     //objects
     public GameObject rock;
-    public GameObject player;
 
     public Collider rockCollider;
     public Rigidbody rb;
 
-    //variables
-    public float xSpeed; 
 
     void Start()
     {
@@ -34,7 +32,7 @@ public class RockSkipping : MonoBehaviour
     {
         //transform.position += (xSpeed * transform.forward * Time.deltaTime);
 
-        Invoke("RockSink", 5f);
+        Invoke("RockSink", skipDuration);
 
         if (sink == true && transform.position.y <= 0) //waterlevel set to 0
         {

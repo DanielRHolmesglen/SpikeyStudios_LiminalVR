@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public UnityEvent OnInteraction;
+    public UnityEvent OnThrow;
 
     private Transform hand;
     public Transform handLeft;
@@ -75,6 +76,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Debug.Log(speed);
         rocksRigid.useGravity = true;
         rocksRigid.AddForce(direction * (throwing*speed),ForceMode.Impulse);
+        OnThrow.Invoke();
     }
 
     IEnumerator Movments()
