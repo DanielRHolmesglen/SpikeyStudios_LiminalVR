@@ -105,7 +105,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2941991350095378165}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -126,6 +126,22 @@ MonoBehaviour:
   OnInteraction:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnThrow:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7418329796256989941}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   handLeft: {fileID: 0}
@@ -171,8 +187,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  skipDuration: 0
   rock: {fileID: 2941991350095378165}
-  player: {fileID: 0}
   rockCollider: {fileID: 6626449394300517128}
   rb: {fileID: 6626449394300517130}
-  xSpeed: 15
