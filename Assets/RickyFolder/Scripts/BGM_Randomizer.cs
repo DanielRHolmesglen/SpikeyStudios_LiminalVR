@@ -14,9 +14,24 @@ public class BGM_Randomizer : MonoBehaviour
     {
         BGM_Source = GetComponent<AudioSource>();
 
-        BGM_Source.clip = BGM_Sounds[Random.Range(0, BGM_Sounds.Length)];
-        BGM_Source.Play();
+        RandomClip();
     }
 
-  
+
+    void RandomClip()
+    {
+        BGM_Source.clip = BGM_Sounds[Random.Range(0, BGM_Sounds.Length)];
+
+        // Get the Length of the BGM
+        float clipLength = BGM_Source.clip.length;
+        Debug.Log("Audio clip length is : " + BGM_Source.clip.length);
+
+        // Use the clips length to determine a delay before playing the function again and picking a new song
+        Invoke("RandomClip", clipLength);
+        BGM_Source.Play();
+
+
+    }  
+
+
 }
