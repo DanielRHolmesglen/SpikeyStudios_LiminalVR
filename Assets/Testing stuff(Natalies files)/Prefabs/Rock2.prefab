@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6396776585940818529
+--- !u!1 &6540732545633346625
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7971005964341946482}
-  - component: {fileID: 1424743929568301636}
-  - component: {fileID: 4681839693814034109}
-  - component: {fileID: 3162661083199630189}
-  - component: {fileID: 3162661083199630191}
-  - component: {fileID: 3162661083199630188}
-  - component: {fileID: 5535938848331261844}
-  - component: {fileID: 4319962034632402886}
+  - component: {fileID: 6540732545633346650}
+  - component: {fileID: 6540732545633346651}
+  - component: {fileID: 6540732545633346652}
+  - component: {fileID: 6540732545633346653}
+  - component: {fileID: 6540732545633346654}
+  - component: {fileID: 6540732545633346655}
+  - component: {fileID: 6540732545633346624}
+  - component: {fileID: 6540732545577185671}
   m_Layer: 0
   m_Name: Rock2
   m_TagString: Untagged
@@ -23,13 +23,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7971005964341946482
+--- !u!4 &6540732545633346650
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.038, y: 0.834, z: 1.086}
   m_LocalScale: {x: 0.041465666, y: 0.054323353, z: 0.041465666}
@@ -37,21 +37,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1424743929568301636
+--- !u!33 &6540732545633346651
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_Mesh: {fileID: 2272001217198551621, guid: 0dc5ed99003af8b458dc39707f7f910d, type: 3}
---- !u!23 &4681839693814034109
+--- !u!23 &6540732545633346652
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,13 +82,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &3162661083199630189
+--- !u!54 &6540732545633346653
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -98,26 +98,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3162661083199630191
+--- !u!65 &6540732545633346654
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_Material: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.2526855, y: 0.6592199, z: 2.9346972}
   m_Center: {x: 0.013876975, y: 0.24925765, z: -0.03330809}
---- !u!114 &3162661083199630188
+--- !u!114 &6540732545633346655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1be63bf1b103944e1b93fb6f64f475ac, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
   OnThrow:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4319962034632402886}
+      - m_Target: {fileID: 6540732545577185671}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -148,31 +148,31 @@ MonoBehaviour:
   handRight: {fileID: 0}
   throwing: 250
   wait: 0.5
---- !u!114 &5535938848331261844
+--- !u!114 &6540732545633346624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
+  m_GameObject: {fileID: 6540732545633346625}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff9528549fb7aa645bec503892a3521d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashEffect: {fileID: 7887922935024144086, guid: 031041cc975d3174dbb6fa5fc400dec6,
+  splashEffect: {fileID: 7869261538523352699, guid: 0277d2a5d220f904fb13700ac4673fea,
     type: 3}
-  rippleEffect: {fileID: 5089834392822543356, guid: 1b6550aeb2d1a66489ef28c257b60c04,
+  rippleEffect: {fileID: 1644093387826908632, guid: f260b19ec43a9924dbcbe7c87c442a90,
     type: 3}
-  water: {fileID: 5465636825609084944, guid: 87222d39e60c2bc43ade6170f649ce67, type: 3}
---- !u!114 &4319962034632402886
+  water: {fileID: 3066795650552557115, guid: 0d1854387960ea74d8259683aa66f490, type: 3}
+--- !u!114 &6540732545577185671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6396776585940818529}
-  m_Enabled: 1
+  m_GameObject: {fileID: 6540732545633346625}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31becdf954fc12447a6630a6865b8176, type: 3}
   m_Name: 
@@ -187,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  skipDuration: 0
-  rock: {fileID: 6396776585940818529}
-  rockCollider: {fileID: 3162661083199630191}
-  rb: {fileID: 3162661083199630189}
+  skipDuration: 7
+  rock: {fileID: 6540732545633346625}
+  rockCollider: {fileID: 6540732545633346654}
+  rb: {fileID: 6540732545633346653}

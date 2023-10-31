@@ -15,14 +15,14 @@ public class GameManager : MonoBehaviour
     //Once timer is out give one last rocks to player to throw 
 
     #region Variables 
-    [SerializeField] float remainingTime;
+    [SerializeField] float remainingTime; //Can set in inspector to however many seconds experience will be
 
     float minRocksThrown;
     [SerializeField] float rockCount;
-    public Collider rockDespawnZone;
+    public Collider rockDespawnZone; //Where rock will destroy itself after leaving collider 
 
-    public GameObject[] rocksToSpawn;
-    public Transform[] rockSpawnLocations;
+    public GameObject[] rocksToSpawn; //Array of rock prefabs to spawn
+    public Transform[] rockSpawnLocations; //Array of transforms for rocks to spawn
 
     #endregion
 
@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
 
         if(remainingTime == 0 && minRocksThrown == 10)
         {
-            //Add fade screen
             GameEnd();
         }
         else if(remainingTime == 0 && minRocksThrown != 10 || remainingTime != 0 && minRocksThrown == 10)
@@ -48,12 +47,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionExit(Collision collision)
     {
         if(collision.gameObject == rockDespawnZone)
         {
             rockCount++;
             //Destroy the rock that bounced 
+            Destroy(this.gameObject);
         }
     }
 
@@ -62,10 +62,22 @@ public class GameManager : MonoBehaviour
         //Spawn a rock at rock location
         //both rock and rock location are randomized 
 
+        GameObject rockSpawnee;
+        rockSpawnee = (rocksToSpawn[Random.Range(0, rocksToSpawn.Length)]);
+
+        Transform rockLocation;
+        rockLocation = (rockSpawnLocations[Random.Range(0, rockSpawnLocations.Length)]);
+
+        Instantiate(rockSpawnee, rockLocation.position, rockLocation.rotation);
     }
 
     void GameEnd()
     {
+        var fader = ScreenFader.Instance;
+        Color fadeColor = Color.black;
+        float fadeDuration = 2f;
+
+        fader.FadeTo(fadeColor, fadeDuration);
         ExperienceApp.End();
     }
 
