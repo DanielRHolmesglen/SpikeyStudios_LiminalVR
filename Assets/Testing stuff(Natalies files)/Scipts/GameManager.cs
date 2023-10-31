@@ -6,34 +6,67 @@ using Liminal.SDK.Core;
 
 public class GameManager : MonoBehaviour
 {
-    //After a certain number of rocks are thrown, the game will end 
+    //Game will end after a certain amount of rocks are throw AND when timer runs out 
+    //Make a 3 minute timer count down 
+    //Make a count of rocks throw to keep track how many rocks are left and if need to spawn more 
+    //Make a rock spawner 
+    //Set up colliders to track rocks 
+    //Have a min amount of rocks to be thrown before game ends 
+    //Once timer is out give one last rocks to player to throw 
 
-    //Variables needed 
-    //Variable to count the number of rocks thrown
-    public int rocksThrown = 0;
-    public int maxRocksThrown;
-    //variable for colliders for the rocks to hit
-    public GameObject wallsToHit; 
+    #region Variables 
+    [SerializeField] float remainingTime;
 
-    //Function for adding to count to rocksThrown after hitting colliders 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject == wallsToHit)
-        {
-            Destroy(gameObject);
-            rocksThrown++;
-        }
-    }
+    float minRocksThrown;
+    [SerializeField] float rockCount;
+    public Collider rockDespawnZone;
+
+    public GameObject[] rocksToSpawn;
+    public Transform[] rockSpawnLocations;
+
+    #endregion
 
     void Update()
     {
-        //When the amount of rocks thrown is equal to maxrocksthrown experience ends 
-        //if(rocksThrown == maxRocksThrown)
-        //{
-        //var fader = ScreenFader.Instance;
-        //fader.FadeTo(Color fadeColor, float fadeDuration);
-        //ExperienceApp.End();
-        //}
+        if(remainingTime > 0)
+        {
+            remainingTime -= Time.deltaTime;
+        }
+        else if(remainingTime < 0)
+        {
+            remainingTime = 0; 
+        }
+
+        if(remainingTime == 0 && minRocksThrown == 10)
+        {
+            //Add fade screen
+            GameEnd();
+        }
+        else if(remainingTime == 0 && minRocksThrown != 10 || remainingTime != 0 && minRocksThrown == 10)
+        {
+            RockSpawner();
+        }
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject == rockDespawnZone)
+        {
+            rockCount++;
+            //Destroy the rock that bounced 
+        }
+    }
+
+    void RockSpawner()
+    {
+        //Spawn a rock at rock location
+        //both rock and rock location are randomized 
+
+    }
+
+    void GameEnd()
+    {
+        ExperienceApp.End();
+    }
+
 }
