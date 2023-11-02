@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         {
             GameEnd();
         }
-        else if(remainingTime == 0 && minRocksThrown != 10 || remainingTime != 0 && minRocksThrown == 10)
+        else if(remainingTime != 0 && minRocksThrown == 10)
         {
             RockSpawner();
         }
