@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.92
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 247adf470af684c49a95b0781a8494bc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7ff24cf55d4fa8841be06df70da262ef, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1394,6 +1394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594ba95148ff32f419b03b482ef9651c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   remainingTime: 20
   rockCount: 0
   rockDespawnZone: {fileID: 749197637}

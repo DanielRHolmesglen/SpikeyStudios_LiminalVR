@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     //Once timer is out give one last rocks to player to throw 
 
     #region Variables 
+    [SerializeField] private UnityEvent triggerSpawn;
     [SerializeField] float remainingTime; //Can set in inspector to however many seconds experience will be
 
     float minRocksThrown;
