@@ -11,17 +11,24 @@ public class RockSkipping : MonoBehaviour
     /// <summary>
     /// Script attaches to Rock object for physics movement, skipping mechanics, and communicates for vfx
     /// </summary>
+   
+    #region variables
     public UnityEvent Skip;
     public UnityEvent Sink;
 
+    //sink mechanics and timing
     private bool sink;
     public float skipDuration;
+    private float skipTime = 0;
+
     //objects
     public GameObject rock;
+    Collider skipZone; //rock sinks when left zone
 
-    public Collider rockCollider;
-    public Rigidbody rb;
+    //public Collider rockCollider;
+    //public Rigidbody rb;
 
+    #endregion
 
     void Start()
     {
@@ -30,26 +37,26 @@ public class RockSkipping : MonoBehaviour
 
     void Update()
     {
-        //transform.position += (xSpeed * transform.forward * Time.deltaTime);
 
-        Invoke("RockSink", skipDuration);
-
-        if (sink == true && transform.position.y <= 0) //waterlevel set to 0
+        if (sink == true && transform.position.y <= 0 && skipTime >= skipDuration) //waterlevel set to 0
         {
             Sink.Invoke(); //apply splash and ripple vfx
             Debug.Log("Sink");
-            rock.SetActive(false);
-            Destroy(this);
         }
+        skipTime += Time.deltaTime;
     }
-
-    void RockSink()
-    { sink = true; }
 
     void OnCollisionEnter(Collision collision)
     {
 
-        Skip.Invoke(); //apply splash and ripple vfx
+        Skip.Invoke(); //skip unityevent
         Debug.Log("skip");
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject == skipZone)
+        //sinkable when left skipzone
+        sink = true;
     }
 }

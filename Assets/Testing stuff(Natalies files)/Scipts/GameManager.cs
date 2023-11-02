@@ -49,14 +49,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    public void RockCountPlus()
     {
-        if(collision.gameObject == rockDespawnZone)
-        {
             rockCount++;
-            //Destroy the rock that bounced 
-            Destroy(this.gameObject);
-        }
     }
 
     void RockSpawner()
@@ -76,10 +71,7 @@ public class GameManager : MonoBehaviour
     void GameEnd()
     {
         var fader = ScreenFader.Instance;
-        Color fadeColor = Color.black;
-        float fadeDuration = 2f;
-
-        fader.FadeTo(fadeColor, fadeDuration);
+        fader.FadeTo(Color.black, 2f);
         ExperienceApp.End();
     }
 

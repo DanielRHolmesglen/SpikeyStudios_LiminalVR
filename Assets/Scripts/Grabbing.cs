@@ -46,13 +46,11 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
 
         //Michael's edit
-        var primaryInput = VRDevice.Device.PrimaryInputDevice;
-
-        if (primaryInput.GetButtonDown(VRButton.One))
+        if (Input.GetButtonDown(VRButton.One))
         {
             Invoke("OnPointerDown",0);
         }
-        if (primaryInput.GetButtonUp(VRButton.One))
+        if (Input.GetButtonUp(VRButton.One))
         {
             Invoke("OnPointerUp", 0);
         }
