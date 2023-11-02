@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Liminal.Core.Fader;
 using Liminal.SDK.Core;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
