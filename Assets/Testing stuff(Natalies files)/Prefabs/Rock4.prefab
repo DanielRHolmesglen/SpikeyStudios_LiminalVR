@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &33985446058348945
+--- !u!1 &6082364999544552565
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3901212724419470210}
-  - component: {fileID: 5438346082256853428}
-  - component: {fileID: 1748640864265397581}
-  - component: {fileID: 8311763111031676265}
-  - component: {fileID: 8311763111031676267}
-  - component: {fileID: 8311763111031676266}
-  - component: {fileID: -2975492952135313130}
-  - component: {fileID: 6417951381196356426}
+  - component: {fileID: 6082364999544552573}
+  - component: {fileID: 6082364999544552574}
+  - component: {fileID: 6082364999544552575}
+  - component: {fileID: 6082364999544552568}
+  - component: {fileID: 6082364999544552569}
+  - component: {fileID: 6082364999544552570}
+  - component: {fileID: 6082364999544552571}
+  - component: {fileID: 6082364999544552564}
   m_Layer: 0
   m_Name: Rock4
   m_TagString: Untagged
@@ -23,35 +23,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3901212724419470210
+--- !u!4 &6082364999544552573
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29000002, y: 0.834, z: 1.0494}
+  m_LocalPosition: {x: -0.29000002, y: 0.834, z: 1.344}
   m_LocalScale: {x: 0.044636022, y: 0.044636022, z: 0.044636022}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5438346082256853428
+--- !u!33 &6082364999544552574
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   m_Mesh: {fileID: 1149339258207356573, guid: 830c534e46b4bea46a46af2785650293, type: 3}
---- !u!23 &1748640864265397581
+--- !u!23 &6082364999544552575
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,13 +82,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &8311763111031676265
+--- !u!54 &6082364999544552568
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -98,26 +98,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &8311763111031676267
+--- !u!65 &6082364999544552569
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
-  m_Material: {fileID: 0}
+  m_GameObject: {fileID: 6082364999544552565}
+  m_Material: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.2313464, y: 0.6782266, z: 2.2792945}
   m_Center: {x: 0.04717958, y: 0.19185561, z: -0.011248767}
---- !u!114 &8311763111031676266
+--- !u!114 &6082364999544552570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1be63bf1b103944e1b93fb6f64f475ac, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
   OnThrow:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6417951381196356426}
+      - m_Target: {fileID: 6082364999544552564}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -148,31 +148,31 @@ MonoBehaviour:
   handRight: {fileID: 0}
   throwing: 250
   wait: 0.5
---- !u!114 &-2975492952135313130
+--- !u!114 &6082364999544552571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
+  m_GameObject: {fileID: 6082364999544552565}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff9528549fb7aa645bec503892a3521d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashEffect: {fileID: 7887922935024144086, guid: 031041cc975d3174dbb6fa5fc400dec6,
+  splashEffect: {fileID: 7869261538523352699, guid: 0277d2a5d220f904fb13700ac4673fea,
     type: 3}
-  rippleEffect: {fileID: 5089834392822543356, guid: 1b6550aeb2d1a66489ef28c257b60c04,
+  rippleEffect: {fileID: 1644093387826908632, guid: f260b19ec43a9924dbcbe7c87c442a90,
     type: 3}
-  water: {fileID: 5465636825609084944, guid: 87222d39e60c2bc43ade6170f649ce67, type: 3}
---- !u!114 &6417951381196356426
+  water: {fileID: 3066795650552557115, guid: 0d1854387960ea74d8259683aa66f490, type: 3}
+--- !u!114 &6082364999544552564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33985446058348945}
-  m_Enabled: 1
+  m_GameObject: {fileID: 6082364999544552565}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31becdf954fc12447a6630a6865b8176, type: 3}
   m_Name: 
@@ -187,9 +187,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  skipDuration: 0
-  rock: {fileID: 33985446058348945}
-  player: {fileID: 0}
-  rockCollider: {fileID: 8311763111031676267}
-  rb: {fileID: 8311763111031676265}
-  xSpeed: 0
+  skipDuration: 7
+  rock: {fileID: 6082364999544552565}
+  rockCollider: {fileID: 6082364999544552569}
+  rb: {fileID: 6082364999544552568}
