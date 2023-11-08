@@ -23,6 +23,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void Start()
     {
         rocksRigid = GetComponent<Rigidbody>();
+        InputMonitor.isitheld = InputMonitor.beingHeld.no;
     }
 
     public void OnPointerDown(PointerEventData eventData)
