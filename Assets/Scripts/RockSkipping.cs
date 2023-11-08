@@ -37,7 +37,10 @@ public class RockSkipping : MonoBehaviour
 
     void Update()
     {
-
+        if (skipTime >= skipDuration)
+        {
+            Sink.Invoke();
+        }
         if (sink == true && transform.position.y <= 0 && skipTime >= skipDuration) //waterlevel set to 0
         {
             Sink.Invoke(); //apply splash and ripple vfx
@@ -48,15 +51,16 @@ public class RockSkipping : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-
-        Skip.Invoke(); //skip unityevent
+        //skip Debug
         Debug.Log("skip");
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collision collision)
     {
-        if(collision.gameObject == skipZone)
         //sinkable when left skipzone
+        if (collision.gameObject == skipZone)
         sink = true;
+        Debug.Log("Sinkable");
     }
+
 }

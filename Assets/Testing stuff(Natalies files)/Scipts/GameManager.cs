@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UnityEvent triggerSpawn;
     [SerializeField] float remainingTime; //Can set in inspector to however many seconds experience will be
 
-    float minRocksThrown;
     [SerializeField] float rockCount;
     public Collider rockDespawnZone; //Where rock will destroy itself after leaving collider 
 
@@ -30,23 +29,17 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(remainingTime > 0)
-        {
-            remainingTime -= Time.deltaTime;
-        }
-        else if(remainingTime < 0)
-        {
-            remainingTime = 0; 
-        }
-
-        if(remainingTime == 0 && minRocksThrown == 10)
+        if (remainingTime <= 0 && rockCount >= 10)
         {
             GameEnd();
         }
-        else if(remainingTime != 0 && minRocksThrown == 10)
+        else if (remainingTime != 0 && rockCount >= 10)
         {
             RockSpawner();
         }
+
+        if (remainingTime > 0) remainingTime -= Time.deltaTime;
+
     }
 
     public void RockCountPlus()
@@ -70,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     void GameEnd()
     {
+        //screen fade to black and exit experience
         var fader = ScreenFader.Instance;
         fader.FadeTo(Color.black, 2f);
         ExperienceApp.End();
