@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using Liminal.SDK.VR;
-using Liminal.SDK.VR.Input;
-using System.Runtime.InteropServices;
 
 public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -18,21 +15,31 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool isHeld=false;
     private Rigidbody rocksRigid;
     public float throwing;
-    
     private Vector3 position1;
     private Vector3 position2;
     private Vector3 direction;
-    
     private float speed;
-    public float wait; //for speed calc
-
+    public float wait;
     public void Start()
     {
         rocksRigid = GetComponent<Rigidbody>();
-
+        InputMonitor.isitheld = InputMonitor.beingHeld.no;
     }
 
-
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("attempt to select rock");
+        if(InputMonitor.isitheld==InputMonitor.beingHeld.no)
+        {
+            Debug.Log("Attempt to put in hand");
+            rocksRigid.useGravity = false;
+            OnInteraction.Invoke();
+            rocksRigid.position = hand.position;
+            rocksRigid.rotation = hand.rotation;
+            isHeld = true;
+            InputMonitor.isitheld = InputMonitor.beingHeld.yes;
+        }
+    }
 
     public void Update()
     {
@@ -44,16 +51,6 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             hand = handLeft;
         }
-
-        //Michael's edit
-        if (Input.GetButtonDown(VRButton.One))
-        {
-            Invoke("OnPointerDown",0);
-        }
-        if (Input.GetButtonUp(VRButton.One))
-        {
-            Invoke("OnPointerUp", 0);
-        }
     }
 
     public void FixedUpdate()
@@ -62,24 +59,9 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             rocksRigid.position = hand.position;
             rocksRigid.rotation = hand.rotation;
-            StartCoroutine(Movements());
+            StartCoroutine(Movments());
             direction = position1 - position2;
             speed = Vector3.Distance(position2, position1);
-        }
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("pointer Down");
-        if (InputMonitor.isitheld == InputMonitor.beingHeld.no)
-        {
-            Debug.Log("Attempt to put in hand");
-            rocksRigid.useGravity = false;
-            OnInteraction.Invoke();
-            rocksRigid.position = hand.position;
-            rocksRigid.rotation = hand.rotation;
-            isHeld = true;
-            InputMonitor.isitheld = InputMonitor.beingHeld.yes;
         }
     }
 
@@ -98,7 +80,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         OnThrow.Invoke();
     }
 
-    IEnumerator Movements()
+    IEnumerator Movments()
     {
         position1 = rocksRigid.position;
         yield return new WaitForSeconds(wait);
