@@ -20,6 +20,9 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector3 direction;
     private float speed;
     public float wait;
+
+    
+
     public void Start()
     {
         rocksRigid = GetComponent<Rigidbody>();
@@ -76,7 +79,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         Debug.Log(direction);
         Debug.Log(speed);
         rocksRigid.useGravity = true;
-        rocksRigid.AddForce(direction * (throwing*speed),ForceMode.Impulse);
+        rocksRigid.AddForce(AimAssist.instance.ReTarget(direction) * (throwing*speed),ForceMode.Impulse);
         OnThrow.Invoke();
     }
 
