@@ -828,7 +828,7 @@ PrefabInstance:
     - target: {fileID: 7740985247275887653, guid: 1af07d6b2171de24cacb67bbffdc5578,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -0.104
       objectReference: {fileID: 0}
     - target: {fileID: 7740985247275887653, guid: 1af07d6b2171de24cacb67bbffdc5578,
         type: 3}
@@ -1479,7 +1479,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.03
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2199,7 +2199,7 @@ PrefabInstance:
     - target: {fileID: 6082364999544552573, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.035700083
+      value: -0.082
       objectReference: {fileID: 0}
     - target: {fileID: 6082364999544552573, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
@@ -2239,6 +2239,21 @@ PrefabInstance:
     - target: {fileID: 6082364999544552573, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082364999544552568, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082364999544552568, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082364999544552569, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6082364999544552570, guid: a2a7b6b68099cda4baf0fea5058558ac,
@@ -2429,6 +2444,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6877923999102023012, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa,
+        type: 2}
     - target: {fileID: 6877923999102023013, guid: 91042fa6f2ccf614880c20185c09f9b7,
         type: 3}
       propertyPath: handLeft
