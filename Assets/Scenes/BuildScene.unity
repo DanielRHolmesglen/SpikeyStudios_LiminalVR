@@ -1409,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 7740985247275887653, guid: 1af07d6b2171de24cacb67bbffdc5578,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -0.104
       objectReference: {fileID: 0}
     - target: {fileID: 7740985247275887653, guid: 1af07d6b2171de24cacb67bbffdc5578,
         type: 3}
@@ -1890,7 +1890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1747011793
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1949,13 +1949,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747011792}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.36563495, y: -0, z: -0, w: 0.93075836}
+  m_LocalPosition: {x: -0.07, y: 2.39, z: -3.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372941389}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.893, y: 0, z: 0}
 --- !u!1 &1783570638 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6540732545633346625, guid: 8d832fca3d5a4b24d92767882f64bfc0,
@@ -2692,6 +2692,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 1555232107957818214, guid: 4c47701b8a645844095ade0d4f333168,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1388008315}
+    - target: {fileID: 1555232107957818214, guid: 4c47701b8a645844095ade0d4f333168,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1555232107957818213, guid: 4c47701b8a645844095ade0d4f333168,
         type: 3}
       propertyPath: splashEffect
@@ -3081,6 +3091,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 4723970795949295688, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1434112125}
+    - target: {fileID: 4723970795949295688, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4047298524311754627, guid: 9208edb7c233bf14684e1050079063ba,
         type: 3}
       propertyPath: splashEffect
@@ -3096,6 +3116,11 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 780845850}
+    - target: {fileID: 4723970795949295689, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9208edb7c233bf14684e1050079063ba, type: 3}
 --- !u!1 &4773740682288819099
@@ -3268,6 +3293,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6082364999544552570, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 620220136}
+    - target: {fileID: 6082364999544552570, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6082364999544552571, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
       propertyPath: splashEffect
@@ -3362,6 +3397,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6540732545633346655, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 108628210}
+    - target: {fileID: 6540732545633346655, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6540732545633346624, guid: 8d832fca3d5a4b24d92767882f64bfc0,
         type: 3}
       propertyPath: splashEffect
@@ -3456,6 +3501,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6877923999102023013, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1434112125}
+    - target: {fileID: 6877923999102023013, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6877923999102023014, guid: 91042fa6f2ccf614880c20185c09f9b7,
         type: 3}
       propertyPath: splashEffect
@@ -3471,6 +3526,12 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 780845850}
+    - target: {fileID: 6877923999102023012, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 77a1c015bbd91e44d8324feb60185afa,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91042fa6f2ccf614880c20185c09f9b7, type: 3}
 --- !u!1001 &7869261538263062093
