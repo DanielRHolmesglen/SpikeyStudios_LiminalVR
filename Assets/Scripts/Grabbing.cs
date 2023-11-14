@@ -20,7 +20,8 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Vector3 direction;
     private float speed;
     public float wait;
-
+    public Transform spawnPoint;
+    public float spawnTime;
     
 
     public void Start()
@@ -81,6 +82,9 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         rocksRigid.useGravity = true;
         rocksRigid.AddForce(AimAssist.instance.ReTarget(direction) * (throwing*speed),ForceMode.Impulse);
         OnThrow.Invoke();
+
+        Invoke("Spawn", spawnTime);
+        Debug.Log("Spawned in");
     }
 
     IEnumerator Movments()
@@ -89,6 +93,12 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         yield return new WaitForSeconds(wait);
         position2 = rocksRigid.position;
         yield return null;
+    }
+
+    void Spawn()
+    {
+        rocksRigid.useGravity = false;
+        rocksRigid.position = spawnPoint.position;
     }
 
 }

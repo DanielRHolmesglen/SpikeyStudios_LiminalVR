@@ -1952,6 +1952,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 1555232107957818214, guid: 4c47701b8a645844095ade0d4f333168,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1388008315}
+    - target: {fileID: 1555232107957818214, guid: 4c47701b8a645844095ade0d4f333168,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1555232107957818213, guid: 4c47701b8a645844095ade0d4f333168,
         type: 3}
       propertyPath: splashEffect
@@ -2331,6 +2341,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 4723970795949295688, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1434112125}
+    - target: {fileID: 4723970795949295688, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4047298524311754627, guid: 9208edb7c233bf14684e1050079063ba,
         type: 3}
       propertyPath: splashEffect
@@ -2346,6 +2366,11 @@ PrefabInstance:
       propertyPath: water
       value: 
       objectReference: {fileID: 780845850}
+    - target: {fileID: 4723970795949295689, guid: 9208edb7c233bf14684e1050079063ba,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9208edb7c233bf14684e1050079063ba, type: 3}
 --- !u!1 &4773740682288819099
@@ -2518,6 +2543,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6082364999544552570, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 620220136}
+    - target: {fileID: 6082364999544552570, guid: a2a7b6b68099cda4baf0fea5058558ac,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6082364999544552571, guid: a2a7b6b68099cda4baf0fea5058558ac,
         type: 3}
       propertyPath: splashEffect
@@ -2612,6 +2647,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6540732545633346655, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 108628210}
+    - target: {fileID: 6540732545633346655, guid: 8d832fca3d5a4b24d92767882f64bfc0,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6540732545633346624, guid: 8d832fca3d5a4b24d92767882f64bfc0,
         type: 3}
       propertyPath: splashEffect
@@ -2706,6 +2751,16 @@ PrefabInstance:
       propertyPath: handRight
       value: 
       objectReference: {fileID: 106151024}
+    - target: {fileID: 6877923999102023013, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1434112125}
+    - target: {fileID: 6877923999102023013, guid: 91042fa6f2ccf614880c20185c09f9b7,
+        type: 3}
+      propertyPath: spawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6877923999102023014, guid: 91042fa6f2ccf614880c20185c09f9b7,
         type: 3}
       propertyPath: splashEffect
