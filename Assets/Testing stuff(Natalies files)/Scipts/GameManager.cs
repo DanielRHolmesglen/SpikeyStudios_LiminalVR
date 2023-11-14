@@ -7,24 +7,25 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    //Game will end after a certain amount of rocks are throw AND when timer runs out 
-    //Make a 3 minute timer count down 
-    //Make a count of rocks throw to keep track how many rocks are left and if need to spawn more 
-    //Make a rock spawner 
+
     //Set up colliders to track rocks 
-    //Have a min amount of rocks to be thrown before game ends 
     //Once timer is out give one last rocks to player to throw 
 
     #region Variables 
     [SerializeField] private UnityEvent triggerSpawn;
-    [SerializeField] float remainingTime; //Can set in inspector to however many seconds experience will be
+    [SerializeField] float remainingTime; //3 minute timer expected
 
     [SerializeField] float rockCount;
     public Collider rockDespawnZone; //Where rock will destroy itself after leaving collider 
 
-    public GameObject[] rocksToSpawn; //Array of rock prefabs to spawn
-    public Transform[] rockSpawnLocations; //Array of transforms for rocks to spawn
+    public GameObject[] rocks; //Rock prefabs
+    public Transform[] spawnPos; //Rock spawn locations
 
+    /* rock random instantiation
+    MeshRenderer[] rockMeshes;
+    MeshRenderer rockMesh; //spawnRock mesh selection
+    MeshFilter[] rockFilters;
+    MeshFilter rockFilter; //spawnRock meshfilter selection */
     #endregion
 
     void Update()
@@ -33,32 +34,13 @@ public class GameManager : MonoBehaviour
         {
             GameEnd();
         }
-        else if (remainingTime != 0 && rockCount >= 10)
-        {
-            RockSpawner();
-        }
 
         if (remainingTime > 0) remainingTime -= Time.deltaTime;
-
     }
 
     public void RockCountPlus()
     {
             rockCount++;
-    }
-
-    void RockSpawner()
-    {
-        //Spawn a rock at rock location
-        //both rock and rock location are randomized 
-
-        GameObject rockSpawnee;
-        rockSpawnee = (rocksToSpawn[Random.Range(0, rocksToSpawn.Length)]);
-
-        Transform rockLocation;
-        rockLocation = (rockSpawnLocations[Random.Range(0, rockSpawnLocations.Length)]);
-
-        Instantiate(rockSpawnee, rockLocation.position, rockLocation.rotation);
     }
 
     void GameEnd()
