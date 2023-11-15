@@ -34,14 +34,10 @@ public class RockSkipping : MonoBehaviour
     #endregion
     
     void Awake()
-    {
-        timerStart = false;
-    }
+    { timerStart = false;}
 
     void Start()
-    {
-        rock = gameObject.gameObject;
-    }
+    { rock = gameObject.gameObject;}
 
     void Update()
     {
@@ -54,20 +50,14 @@ public class RockSkipping : MonoBehaviour
     }
 
     public void ThrowTimerStart()
-    {
-        timerStart = true;
-    }
+    { timerStart = true; }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        //skip Debug
-        Debug.Log("skip");
-    }
+    void OnCollisionEnter(Collision collision) //skip debug
+    {Debug.Log("skip"); }
 
-    private void OnTriggerExit(Collision collision)
+    private void OnTriggerExit(Collider other) //sinkable when left skipzone
     {
-        //sinkable when left skipzone
-        if (collision.gameObject == skipZone)
+        if (other == skipZone)
         sink = true;
         Debug.Log("Sinkable");
     }
