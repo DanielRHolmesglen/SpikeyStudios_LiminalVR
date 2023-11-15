@@ -808,6 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860123715}
   - component: {fileID: 860123716}
+  - component: {fileID: 860123717}
   m_Layer: 0
   m_Name: ToolTip
   m_TagString: Untagged
@@ -843,6 +844,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1186726424}
+--- !u!114 &860123717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860123714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb004bf4a4ce95e469d622732da77032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1595490470}
+  textToShow: 'How to play: Pick up one of the rocks and give it a good throw!'
 --- !u!4 &883230474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1644093387826908635, guid: f260b19ec43a9924dbcbe7c87c442a90,
