@@ -127,36 +127,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 366088966}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &108628209
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 108628210}
-  m_Layer: 0
-  m_Name: SpawningSpots2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &108628210
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108628209}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.977, y: 1.101, z: -0.047}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 372941389}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113607464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6898243516976905399, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
@@ -562,14 +532,74 @@ Transform:
   - {fileID: 749197640}
   - {fileID: 1888246316}
   - {fileID: 1434112125}
-  - {fileID: 108628210}
-  - {fileID: 1388008315}
-  - {fileID: 620220136}
-  - {fileID: 2068488977}
+  - {fileID: 436030356}
+  - {fileID: 660740697}
+  - {fileID: 1880010953}
+  - {fileID: 372947527}
   - {fileID: 595814276}
   - {fileID: 860123715}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372947526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372947527}
+  m_Layer: 0
+  m_Name: RockSpawn5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372947527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372947526}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.54, y: 1.0853, z: -0.12200001}
+  m_LocalScale: {x: 0.025620237, y: 0.034074858, z: 0.025620237}
+  m_Children: []
+  m_Father: {fileID: 372941389}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &436030355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436030356}
+  m_Layer: 0
+  m_Name: RockSpawn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436030356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436030355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.787, y: 1.081, z: -0.16}
+  m_LocalScale: {x: 0.041465666, y: 0.054323353, z: 0.041465666}
+  m_Children: []
+  m_Father: {fileID: 372941389}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &461117266 stripped
 Transform:
@@ -678,7 +708,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 595814275}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &620220135
+--- !u!1 &660740696
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -686,27 +716,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 620220136}
+  - component: {fileID: 660740697}
   m_Layer: 0
-  m_Name: SpawningSpots4
+  m_Name: RockSpawn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &620220136
+--- !u!4 &660740697
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620220135}
+  m_GameObject: {fileID: 660740696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.635, y: 1.101, z: -0.281}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.77099997, y: 1.081, z: 0.06799999}
+  m_LocalScale: {x: 0.024041338, y: 0.022464214, z: 0.020460783}
   m_Children: []
   m_Father: {fileID: 372941389}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749197636
 GameObject:
@@ -1303,6 +1333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 11311e66199d47344b9b9f44e25d9053,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b6325a4a7eb83c747a3bb438561d7044, type: 2}
     - target: {fileID: -4216859302048453862, guid: 11311e66199d47344b9b9f44e25d9053,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1358,11 +1393,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 11311e66199d47344b9b9f44e25d9053,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b6325a4a7eb83c747a3bb438561d7044, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11311e66199d47344b9b9f44e25d9053, type: 3}
 --- !u!4 &1304637073 stripped
@@ -1371,36 +1401,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 366088966}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1388008314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1388008315}
-  m_Layer: 0
-  m_Name: SpawningSpots3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1388008315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388008314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.822, y: 1.101, z: -0.162}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 372941389}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389616781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1260162968871696499, guid: 22276a8657744e04cba8ad0a2caf4195,
@@ -1442,7 +1442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434112125}
   m_Layer: 0
-  m_Name: SpawningSpots1
+  m_Name: RockSpawn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1456,8 +1456,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434112124}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 1.101, z: 0.178}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.671, y: 1.079, z: -0.061000004}
+  m_LocalScale: {x: 0.060604837, y: 0.060604837, z: 0.060604837}
   m_Children: []
   m_Father: {fileID: 372941389}
   m_RootOrder: 24
@@ -1601,6 +1601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightHand
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 24aa4fc2b42982c4596f408f3f14c40a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f1fee9ccbcc0dc44cbbe914c357e5595, type: 2}
     - target: {fileID: -4216859302048453862, guid: 24aa4fc2b42982c4596f408f3f14c40a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1656,11 +1661,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 24aa4fc2b42982c4596f408f3f14c40a,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f1fee9ccbcc0dc44cbbe914c357e5595, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24aa4fc2b42982c4596f408f3f14c40a, type: 3}
 --- !u!1 &1575969755
@@ -2211,6 +2211,36 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1880010952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880010953}
+  m_Layer: 0
+  m_Name: RockSpawn4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1880010953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880010952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.586, y: 1.084, z: 0.07129991}
+  m_LocalScale: {x: 0.044636022, y: 0.044636022, z: 0.044636022}
+  m_Children: []
+  m_Father: {fileID: 372941389}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888246314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,9 +2286,9 @@ MonoBehaviour:
   - {fileID: 1908582271}
   spawnPos:
   - {fileID: 1434112125}
-  - {fileID: 108628210}
-  - {fileID: 1388008315}
-  - {fileID: 620220136}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!4 &1888246316
 Transform:
@@ -2460,36 +2490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31becdf954fc12447a6630a6865b8176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2068488976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2068488977}
-  m_Layer: 0
-  m_Name: SpawningSpots5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2068488977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068488976}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.586, y: 1.101, z: 0.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 372941389}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &141407103187604281
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2622,6 +2622,11 @@ PrefabInstance:
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1880010953}
     - target: {fileID: 2345635874042011651, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3194,6 +3199,11 @@ PrefabInstance:
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 660740697}
     - target: {fileID: 6898243516976905397, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.size
@@ -3298,6 +3308,11 @@ PrefabInstance:
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 372947527}
     - target: {fileID: 7287477104301280605, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3493,6 +3508,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6575711865085310393, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1434112125}
     - target: {fileID: 2539459457637757866, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3587,6 +3607,31 @@ PrefabInstance:
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_useGravity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2297753746109715340, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
@@ -3802,6 +3847,11 @@ PrefabInstance:
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 436030356}
     - target: {fileID: 9153255652175076649, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.size

@@ -27,9 +27,8 @@ public class RockSkipping : MonoBehaviour
     //objects
     public GameObject rock;
     Collider skipZone; //rock sinks when left zone
-
-    //public Collider rockCollider;
-    //public Rigidbody rb;
+    Rigidbody rb;
+    public Transform spawnPoint;
 
     #endregion
     
@@ -37,7 +36,10 @@ public class RockSkipping : MonoBehaviour
     { timerStart = false;}
 
     void Start()
-    { rock = gameObject.gameObject;}
+    { 
+        rock = gameObject.gameObject;
+        rb = rock.GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
@@ -60,5 +62,14 @@ public class RockSkipping : MonoBehaviour
         if (other == skipZone)
         sink = true;
         Debug.Log("Sinkable");
+        Invoke("Spawn",0);
+        Debug.Log("Spawned in");
     }
+
+     void Spawn()
+    {
+        rb.useGravity = false;
+        rb.position = spawnPoint.position;
+    }
+
 }
