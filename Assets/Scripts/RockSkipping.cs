@@ -62,14 +62,14 @@ public class RockSkipping : MonoBehaviour
         if (other == skipZone)
         sink = true;
         Debug.Log("Sinkable");
-        Invoke("Spawn",0);
-        Debug.Log("Spawned in");
+
     }
 
-     void Spawn()
+     public void Spawn()
     {
         rb.useGravity = false;
         rb.position = spawnPoint.position;
+        Debug.Log("Spawned in");
     }
 
 }
