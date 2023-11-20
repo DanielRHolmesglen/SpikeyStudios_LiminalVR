@@ -3724,12 +3724,12 @@ PrefabInstance:
         type: 3}
       propertyPath: handLeft
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266588527}
     - target: {fileID: 2345635874042011652, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
       propertyPath: handRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1563895901}
     - target: {fileID: 2345635874042011652, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4460,12 +4460,12 @@ PrefabInstance:
         type: 3}
       propertyPath: handLeft
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266588527}
     - target: {fileID: 7287477104301280600, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
       propertyPath: handRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1563895901}
     - target: {fileID: 7287477104301280600, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4658,16 +4658,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
-      propertyPath: handLeft
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
-        type: 3}
-      propertyPath: handRight
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
-        type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4397434327147386511}
@@ -4716,6 +4706,16 @@ PrefabInstance:
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: handRight
+      value: 
+      objectReference: {fileID: 1563895901}
+    - target: {fileID: 7369943027722308679, guid: 098e209726b541a4fa897b8f52e2b866,
+        type: 3}
+      propertyPath: handLeft
+      value: 
+      objectReference: {fileID: 1266588527}
     - target: {fileID: 2297753746109715340, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
       propertyPath: splashEffect
@@ -4954,12 +4954,12 @@ PrefabInstance:
         type: 3}
       propertyPath: handLeft
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266588527}
     - target: {fileID: 9153255652175076649, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: handRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1563895901}
     - target: {fileID: 9153255652175076649, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
