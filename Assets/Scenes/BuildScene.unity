@@ -3588,7 +3588,7 @@ PrefabInstance:
     - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
@@ -3625,6 +3625,41 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 1880010953}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 180646279}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345635874042011658, guid: e012c6774e43df24fbd2d9529b9d2b75,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2345635874042011651, guid: e012c6774e43df24fbd2d9529b9d2b75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4165,7 +4200,7 @@ PrefabInstance:
     - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
@@ -4202,6 +4237,31 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 660740697}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1449749619}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898243518311977964, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6898243516976905397, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.size
@@ -4274,7 +4334,7 @@ PrefabInstance:
     - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
@@ -4311,6 +4371,31 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 372947527}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1908582272}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287477104301280602, guid: 2603a8469c2f0684fad23ca10fff1e59,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7287477104301280605, guid: 2603a8469c2f0684fad23ca10fff1e59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4449,7 +4534,7 @@ PrefabInstance:
     - target: {fileID: 6575711865085310393, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6575711865085310393, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
@@ -4490,11 +4575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1888246315}
+      objectReference: {fileID: 4397434327147386511}
     - target: {fileID: 6575711865085310393, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: RockSpawner
+      value: Spawn
       objectReference: {fileID: 0}
     - target: {fileID: 6575711865085310393, guid: 098e209726b541a4fa897b8f52e2b866,
         type: 3}
@@ -4798,7 +4883,7 @@ PrefabInstance:
     - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
@@ -4829,7 +4914,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1888246314}
+      objectReference: {fileID: 1995846920}
     - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: m_Enabled
@@ -4850,6 +4935,16 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 436030356}
+    - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153255652515268849, guid: 049effb3de96a0548b010348ff97b164,
+        type: 3}
+      propertyPath: Sink.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9153255652175076649, guid: 049effb3de96a0548b010348ff97b164,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.size

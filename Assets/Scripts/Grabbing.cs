@@ -21,9 +21,6 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private float speed;
     public float wait;
 
-
-    
-
     public void Start()
     {
         rocksRigid = GetComponent<Rigidbody>();
@@ -77,6 +74,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             InputMonitor.isitheld = InputMonitor.beingHeld.no;
         }
         isHeld = false;
+        StopCoroutine(Movments());
         Debug.Log(direction);
         Debug.Log(speed);
         rocksRigid.useGravity = true;
