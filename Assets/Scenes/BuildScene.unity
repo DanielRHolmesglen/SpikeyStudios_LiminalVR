@@ -4271,12 +4271,12 @@ PrefabInstance:
         type: 3}
       propertyPath: handLeft
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1266588527}
     - target: {fileID: 6898243516976905397, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
       propertyPath: handRight
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1563895901}
     - target: {fileID: 6898243516976905397, guid: 9aa42b67a0f91ab4dbc837c64b89ace8,
         type: 3}
       propertyPath: OnThrow.m_PersistentCalls.m_Calls.Array.data[0].m_Target
