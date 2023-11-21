@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class Grabbing : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
 {
     public UnityEvent OnInteraction;
     public UnityEvent OnThrow;
@@ -27,7 +27,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         InputMonitor.isitheld = InputMonitor.beingHeld.no;
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown()
     {
         Debug.Log("attempt to select rock");
         if(InputMonitor.isitheld==InputMonitor.beingHeld.no)
@@ -66,7 +66,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp()
     {
         Debug.Log("attempt to drop");
         if(isHeld==true)
