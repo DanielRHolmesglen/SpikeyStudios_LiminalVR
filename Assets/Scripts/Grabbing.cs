@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class Grabbing : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
 {
     public UnityEvent OnInteraction;
     public UnityEvent OnThrow;
@@ -27,13 +27,14 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         InputMonitor.isitheld = InputMonitor.beingHeld.no;
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerDown()
     {
         Debug.Log("attempt to select rock");
         if(InputMonitor.isitheld==InputMonitor.beingHeld.no)
         {
             Debug.Log("Attempt to put in hand");
             rocksRigid.useGravity = false;
+            rocksRigid.constraints = RigidbodyConstraints.None;
             OnInteraction.Invoke();
             rocksRigid.position = hand.position;
             rocksRigid.rotation = hand.rotation;
@@ -66,7 +67,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerUp()
     {
         Debug.Log("attempt to drop");
         if(isHeld==true)
@@ -77,6 +78,7 @@ public class Grabbing : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         StopCoroutine(Movments());
         Debug.Log(direction);
         Debug.Log(speed);
+        
         rocksRigid.useGravity = true;
         rocksRigid.AddForce(AimAssist.instance.ReTarget(direction) * (throwing*speed),ForceMode.Impulse);
         OnThrow.Invoke();

@@ -20,7 +20,7 @@ public class RockSkipping : MonoBehaviour
 
     //sink mechanics and timing
     private bool timerStart; //sink condition timer
-    private bool sink;
+    private bool sinkStart, sunk;
     public float skipDuration; //max time in seconds
     private float skipTime = 0; //increases in value 
 
@@ -43,10 +43,11 @@ public class RockSkipping : MonoBehaviour
 
     void Update()
     {
-        if (skipTime >= skipDuration || sink == true && transform.position.y <= 0) //waterlevel set to 0
+        if (skipTime >= skipDuration && !sunk|| sinkStart == true && transform.position.y <= 0 && !sunk) //waterlevel set to 0
         {
             Sink.Invoke(); //apply splash and ripple vfx
             Debug.Log("Sink");
+            sunk = true;
         }
         if (timerStart == true) skipTime += Time.deltaTime;
     }
@@ -60,7 +61,7 @@ public class RockSkipping : MonoBehaviour
     private void OnTriggerExit(Collider other) //sinkable when left skipzone
     {
         if (other == skipZone)
-        sink = true;
+        sinkStart = true;
         Debug.Log("Sinkable");
 
     }
@@ -68,7 +69,16 @@ public class RockSkipping : MonoBehaviour
      public void Spawn()
     {
         rb.useGravity = false;
-        rb.position = spawnPoint.position;
+        rb.velocity = Vector3.zero;
+        transform.position = spawnPoint.position;
+        transform.rotation = Quaternion.identity;
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+
+        sinkStart = false;
+        sunk = false;
+        timerStart = false;
+
+        
         Debug.Log("Spawned in");
     }
 
