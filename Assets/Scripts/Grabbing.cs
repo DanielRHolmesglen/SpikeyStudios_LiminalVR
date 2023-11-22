@@ -34,6 +34,7 @@ public class Grabbing : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
         {
             Debug.Log("Attempt to put in hand");
             rocksRigid.useGravity = false;
+            rocksRigid.constraints = RigidbodyConstraints.None;
             OnInteraction.Invoke();
             rocksRigid.position = hand.position;
             rocksRigid.rotation = hand.rotation;
@@ -77,6 +78,7 @@ public class Grabbing : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
         StopCoroutine(Movments());
         Debug.Log(direction);
         Debug.Log(speed);
+        
         rocksRigid.useGravity = true;
         rocksRigid.AddForce(AimAssist.instance.ReTarget(direction) * (throwing*speed),ForceMode.Impulse);
         OnThrow.Invoke();

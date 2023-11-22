@@ -10,7 +10,7 @@ public class VR_HandController : MonoBehaviour
  
     Ray ray;
     RaycastHit hit;
-    Grabbing grabScript;
+    Grabbing selectedGrabScript;
     public enum Hands { left, right}
     public Hands hand;
 
@@ -19,17 +19,37 @@ public class VR_HandController : MonoBehaviour
         line = gameObject.GetComponent<LineRenderer>();
         //eS = gameObject.GetComponent<EventSystem>();
     }
+    private void OnDisable()
+    {
+        selectedGrabScript.OnPointerUp();
+        selectedGrabScript = null;
+    }
+    private void OnEnable()
+    {
+        selectedGrabScript = null;
+    }
     // Update is called once per frame
     void Update()
     {
         IVRInputDevice VRInput = hand == Hands.left ? VRDevice.Device.SecondaryInputDevice : VRDevice.Device.PrimaryInputDevice;
         ray.origin = transform.position;
         ray.direction = transform.forward;
-        if(Physics.Raycast(ray, out hit, 100))
+        if(Physics.Raycast(ray, out hit, 2))
         {
-            line.SetPosition(0, transform.position);
-            line.SetPosition(1, hit.point);
-            grabScript = hit.transform.GetComponent<Grabbing>();
+            if(selectedGrabScript == null)
+            {
+                line.enabled = true;
+                line.SetPosition(0, transform.position);
+                line.SetPosition(1, Vector3.Lerp(transform.position, hit.point, 0.1f));
+                line.SetPosition(2, Vector3.Lerp(transform.position, hit.point, 0.8f));
+                line.SetPosition(3, hit.point);
+            }
+            else
+            {
+                line.enabled = false;
+            }
+
+            Grabbing grabScript = hit.transform.GetComponent<Grabbing>();
             if(grabScript != null)
             {
                 
@@ -37,6 +57,7 @@ public class VR_HandController : MonoBehaviour
                 {
                     InputMonitor.currenthand = (InputMonitor.handPr)(int)hand;
                     grabScript.OnPointerDown();
+                    selectedGrabScript = grabScript;
                     
                 }
                 
@@ -45,12 +66,24 @@ public class VR_HandController : MonoBehaviour
         }
         else
         {
-            line.SetPosition(0, transform.position);
-            line.SetPosition(1, transform.position + transform.forward * 100);
+            if (selectedGrabScript == null)
+            {
+                Vector3 point = transform.position + transform.forward * 2f;
+                line.enabled = true;
+                line.SetPosition(0, transform.position);
+                line.SetPosition(1, Vector3.Lerp(transform.position, point, 0.01f));
+                line.SetPosition(2, Vector3.Lerp(transform.position, point, 0.8f));
+                line.SetPosition(3, point);
+            }
+            else
+            {
+                line.enabled = false;
+            }
         }
-        if (VRInput.GetButtonUp(VRButton.Trigger) || Input.GetMouseButtonUp(0))
+        if (VRInput.GetButtonUp(VRButton.Trigger) && selectedGrabScript != null || Input.GetMouseButtonUp(0) && selectedGrabScript != null)
         {
-            grabScript.OnPointerUp();
+            selectedGrabScript.OnPointerUp();
+            selectedGrabScript = null;
 
         }
     }
